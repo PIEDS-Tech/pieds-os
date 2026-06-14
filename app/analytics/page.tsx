@@ -46,8 +46,8 @@ export default function AnalyticsDashboard() {
   const [pipeline, setPipeline] = useState<PipelineStage[]>([]);
   const [atRisk, setAtRisk] = useState<AtRiskContact[]>([]);
   const [team, setTeam] = useState<TeamMember[]>([]);
-  const [outreachTimeline, setOutreachTimeline] = useState([]);
-  const [taskTrend, setTaskTrend] = useState([]);
+  const [outreachTimeline, setOutreachTimeline] = useState<any[]>([]);
+  const [taskTrend, setTaskTrend] = useState<any[]>([]);
 
   useEffect(() => {
     setOutreach(getOutreachStats());
