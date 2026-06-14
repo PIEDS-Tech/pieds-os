@@ -80,6 +80,8 @@ export default function MeetingDetailPage({
           deadline: item.deadline,
           linkedMeetingId: id,
           notes: `[ACTION_ITEM_ID:${item.id}]\n[MOM_ID:${mom.id}]\nOriginal owner: ${item.owner}\nOriginal status: ${item.status}`,
+          createdAt: new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
         });
       }
     });
