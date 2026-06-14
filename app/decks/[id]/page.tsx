@@ -6,7 +6,7 @@ import { ArrowLeft, Download, Edit2, ChevronLeft, ChevronRight } from "lucide-re
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { getDeckById, updateDeckSlide, updateDeckStatus, DECK_TEMPLATES } from "@/lib/decks-store";
+import { getDeckById, updateDeckSlide, updateDeckStatus, DECK_TEMPLATES, type Deck } from "@/lib/decks-store";
 import { ROUTES } from "@/lib/routes";
 
 export default function DeckDetailPage({
@@ -15,7 +15,7 @@ export default function DeckDetailPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = use(params);
-  const [deck, setDeck] = useState<any>(null);
+  const [deck, setDeck] = useState<Deck | null>(null);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const [editingSlide, setEditingSlide] = useState(false);
   const [loading, setLoading] = useState(true);
