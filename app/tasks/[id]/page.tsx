@@ -69,8 +69,9 @@ export default function TaskDetailPage({
     task.status !== "done";
 
   const handleStatusChange = (newStatus: string) => {
-    updateTask(id, { status: newStatus });
-    setTask({ ...task, status: newStatus });
+    const status = newStatus as "todo" | "in-progress" | "done";
+    updateTask(id, { status });
+    setTask({ ...task, status });
   };
 
   return (
