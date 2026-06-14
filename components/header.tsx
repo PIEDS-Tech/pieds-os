@@ -46,7 +46,7 @@ export function Header() {
             <DropdownMenuContent align="end" className="w-56">
               <DropdownMenuLabel>
                 <div className="flex flex-col gap-1">
-                  <p className="text-sm font-bold text-foreground">Rishu Joshi</p>
+                  <p className="text-sm font-bold text-foreground">Rishu Raj Gupta</p>
                   <p className="text-xs text-muted-foreground">rishu@pieds.bits</p>
                 </div>
               </DropdownMenuLabel>

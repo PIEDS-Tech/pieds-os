@@ -23,7 +23,7 @@ export default function SettingsPage() {
           </div>
           <div>
             <Label>Name</Label>
-            <Input type="text" value="Rishu Joshi" disabled />
+            <Input type="text" value="Rishu Raj Gupta" disabled />
           </div>
           <div>
             <Label>Role</Label>
